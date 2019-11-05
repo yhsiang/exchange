@@ -1,7 +1,11 @@
 # Exchange demo
 
+This is a demo for a simple exchange api, you can post order, and query orderbook.
+
 
 ## Exchange demo with Docker
+
+If you have a docker environment, please use the command below.
 
 ```
 $ make all
@@ -14,12 +18,24 @@ For other solution, we can use bash script to make sure db connection and then s
 
 # Development
 
+Recommend to setup golang environment and use commands below to run.
+
+```
 $ make tools
 $ DB_HOST=localhost go run main.go
+```
 
 ## Development with Docker
+
+If you have a docker environment, please use the command below.
 
 ```
 $ make mysql
 $ make dev
+```
+
+# Testing
+
+```
+$ make test
 ```
